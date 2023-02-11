@@ -4,9 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
   <body>
+    <div class="w-[900px] mx-auto">
+      <header class="py-3">
+        <nav class="flex justify-between">
+          <span class="block text-red-400">Book mark</span>
+          <ul class="flex">
+            <li class="mx-5">Serif</li>
+            <li class="mx-5">Toggle</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form>
+          <label
+            class="shadow-md rounded-lg overflow-hidden px-2 flex items-center"
+          >
+            <input
+              type="text"
+              name="search"
+              id="search"
+              class="p-2 w-full focus:outline-none"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mx-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </label>
+        </form>
+        <section class="word-title flex justify-between items-center my-6">
+          <h3>
+            <span class="block text-2xl font-bold">Keyboard</span>
+            <span class="block">Transcribe</span>
+          </h3>
+          <span class="block bg-purple-300 p-2 rounded-full cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="purple"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+              />
+            </svg>
+          </span>
+        </section>
+        <section class="part_of_speech py-6">
+          <h3 class="lowercase my-5">Noun</h3>
+          <span class="my-4 block text-gray-500">Meaning</span>
+          <ul class="px-8">
+            <li class="list-disc my-2">
+              <span class="def_one">
+                (etc) Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dicta ab rerum quod. Quos, blanditiis? Minus, similique modi?
+                Doloremque, eaque ratione.</span
+              >
+              <span class="def_action"></span>
+            </li>
+            <li class="list-disc my-2">
+              <span class="def_one">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate earum ab harum, sapiente officiis architecto fugiat
+                rerum ut exercitationem placeat!
+              </span>
+              <span class="def_action"></span>
+            </li>
+          </ul>
+        </section>
+        <p class="synonyms my-2">
+          <span class="text-gray-500">Synonyms</span>
+          <span class="text-purple-400 font-bold inline-block ml-4"
+            >electronic keyboard</span
+          >
+        </p>
+        <section class="part_of_speech py-6">
+          <h3 class="lowercase my-5">verb</h3>
+          <span class="my-4 block text-gray-500">Meaning</span>
+          <ul class="px-8">
+            <li class="list-disc my-2">
+              <span class="def_one">
+                (etc) Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dicta ab rerum quod. Quos,
+              </span>
+              <span class="def_action block text-gray-400 my-2">
+                blanditiis? Minus, similique modi? Doloremque, eaque ratione.
+              </span>
+            </li>
+          </ul>
+        </section>
+        <p class="flex text-sm border-t-2 py-4 items-center">
+          <span class="inline-block mr-4 text-gray-500">Source </span>
+          <a href="/" class="underline font-semibold text-gray-500">
+            https://en.wiktionary.org/wiki/keyboard
+          </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-4 h-4 mx-3"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </p>
+      </main>
+    </div>
     <script src="./assets/script/js/main.js"></script>
   </body>
 </html>
